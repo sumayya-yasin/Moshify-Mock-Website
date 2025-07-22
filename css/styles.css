@@ -18,6 +18,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
     /* 1rem = 10px */
 }
 
@@ -26,6 +27,8 @@ body {
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
+    overflow-x: hidden;
+
 }
 
 h1,
@@ -362,19 +365,29 @@ a {
 
 .media {
     display: flex;
+
 }
 
 .media__title {
     margin-top: 0.5rem;
+
 }
 
 .media__body {
     margin: 0 2rem;
+
 }
+
+
 
 .media__image {
     margin-top: 1.5rem;
     margin-right: 1rem;
+}
+
+.media--dark {
+    background: black;
+    color: #7b858b;
 }
 
 /* Quotes */
@@ -393,6 +406,7 @@ a {
 .quote__text::after {
     content: close-quote;
 }
+
 
 .quote__author {
     font-size: 3rem;
@@ -436,6 +450,7 @@ a {
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: 1fr 1fr;
+        margin: 0;
     }
 }
 
@@ -621,8 +636,15 @@ a {
 }
 
 .block--dark {
+    padding: 2rem 0;
     background: black;
     color: #7b858b;
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+    color: #fff;
 }
 
 .block--dark .block__heading {
@@ -651,6 +673,18 @@ a {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    width: 100%;
+
+
+}
+
+@media screen and (max-width: 1140px) {
+    .container {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
 }
 
 /* Hero */
@@ -672,6 +706,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .hero {
+        clip-path: none;
         padding-top: 0;
     }
 
