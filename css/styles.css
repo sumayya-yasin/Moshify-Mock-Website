@@ -629,7 +629,7 @@ a {
 /* Blocks */
 
 .block {
-    display: flexbox;
+    display: flex;
     margin-top: 0;
 }
 
@@ -642,6 +642,7 @@ a {
     padding: 2rem 0;
     background: black;
     color: #7b858b;
+
 }
 
 
@@ -696,6 +697,7 @@ a {
 .hero {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     padding-bottom: 5rem;
+    margin-top: -1px;
 }
 
 .hero__tagline {
@@ -803,8 +805,8 @@ a {
 
 @media screen and (min-width: 1024px) {
     .plan {
-        margin-bottom: 2rem;
-        ;
+        margin-bottom: 7rem;
+
     }
 
     .plan--popular {
