@@ -629,7 +629,6 @@ a {
 /* Blocks */
 
 .block {
-    display: flex;
     margin-top: 0;
 }
 
