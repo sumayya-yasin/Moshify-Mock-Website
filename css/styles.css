@@ -28,7 +28,6 @@ body {
     line-height: 1.5;
     color: var(--color-body);
     overflow-x: hidden;
-
 }
 
 h1,
@@ -447,6 +446,8 @@ a {
     display: grid;
 }
 
+
+
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: 1fr 1fr;
@@ -499,6 +500,8 @@ a {
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    transform: translateY(50%);
+
 }
 
 .callout--primary {
@@ -641,6 +644,8 @@ a {
     color: #7b858b;
 }
 
+
+
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
@@ -654,12 +659,9 @@ a {
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+    padding: 3rem;
 }
 
-.block--skewed-left {
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-}
 
 .block-plans .grid {
     gap: 8rem 4rem;
@@ -674,8 +676,10 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
+}
 
-
+.container__footer {
+    margin-top: 9rem;
 }
 
 @media screen and (max-width: 1140px) {
@@ -690,7 +694,8 @@ a {
 /* Hero */
 
 .hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding-bottom: 5rem;
 }
 
 .hero__tagline {
@@ -706,8 +711,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .hero {
-        clip-path: none;
-        padding-top: 0;
+        padding-left: 2rem;
     }
 
     .hero__content {
@@ -798,6 +802,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+    .plan {
+        margin-bottom: 2rem;
+        ;
+    }
+
     .plan--popular {
         transform: scale(1.1);
     }
@@ -823,7 +832,7 @@ a {
 
 .feature {
     gap: 4rem 2rem;
-    margin: 12rem 0;
+    margin: 5rem 0;
 }
 
 .feature:first-of-type {
@@ -838,6 +847,10 @@ a {
     width: 100%;
 }
 
+.feature__content {
+    padding: 5rem;
+}
+
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content {
         order: 2;
@@ -847,6 +860,7 @@ a {
 /* Footer */
 
 .footer {
+    padding-top: 20rem;
     background: #232323;
     vertical-align: middle;
 }
@@ -919,13 +933,16 @@ a {
     }
 
     .footer {
-        padding-top: 5rem;
+        padding-top: 12rem;
     }
 
     .footer__heading {
         font-size: 1.6rem;
     }
 }
+
+
+
 
 /* Debugging */
 
