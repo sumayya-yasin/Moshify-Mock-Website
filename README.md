@@ -1,10 +1,10 @@
 # Moshify Responsive website: HTML & CSS
 
-##  About This Version
+## About This Version
 
 This is **my personal take** on the _Moshify project_ originally taught by **Mosh Hamedani**, recreated from scratch using only **HTML and CSS**. It was built to enhance my understanding of responsive web design and front-end development principles.
 
-> 🔗 **Live Demo:** [Visit the Website](https://comforting-alpaca-d69428.netlify.app/)
+> 🔗 **Live Demo:** [Visit the Website](https://moshify-mock.netlify.app/)
 
 ---
 
@@ -20,7 +20,7 @@ This is **my personal take** on the _Moshify project_ originally taught by **Mos
 
 ---
 
-##  Tools & Technologies Used
+## Tools & Technologies Used
 
 - Visual Studio Code
 - Chrome DevTools
@@ -31,9 +31,10 @@ This is **my personal take** on the _Moshify project_ originally taught by **Mos
 
 ---
 
-##  How to Run the Project
+## How to Run the Project
 
 1. **Clone the repo:**
+
    ```bash
    git clone https://github.com/[your-username]/responsive-site-html-css.git
    ```
@@ -43,6 +44,7 @@ This is **my personal take** on the _Moshify project_ originally taught by **Mos
 ```bash
 cd moshify
 ```
+
 3. **Launch index.html in your browser:**
 
 - Open directly in any modern browser
@@ -50,6 +52,6 @@ cd moshify
 
 ---
 
-  
 ## Credits
+
 This project is inspired by Mosh Hamedani's HTML & CSS course. It helped me understand real-world frontend workflows and sharpened my layout, design, and styling skills.
