@@ -606,6 +606,14 @@ a {
 
 .nav__toggler {
     cursor: pointer;
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
