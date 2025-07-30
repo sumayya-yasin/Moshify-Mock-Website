@@ -854,6 +854,7 @@ a {
 
 .feature__image {
     width: 100%;
+    margin-top: 6.5rem;
 }
 
 .feature__content {
@@ -895,7 +896,7 @@ a {
 
 .footer__section {
     padding: 2rem;
-    border-bottom: 1px solid #393939;
+    border-bottom: 1px solid #585555;
 }
 
 .footer__section .list {
@@ -949,6 +950,8 @@ a {
         font-size: 1.6rem;
     }
 }
+
+
 
 /* Debugging */
 
