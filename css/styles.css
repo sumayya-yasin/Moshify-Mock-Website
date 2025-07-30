@@ -951,7 +951,9 @@ a {
     }
 }
 
-
+.panel__image {
+    width: 100%;
+}
 
 /* Debugging */
 
